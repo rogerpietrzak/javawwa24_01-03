@@ -8,8 +8,8 @@ final class Algorithms {
         return true;
     }
 
-    public static int NWD (int a, int b) {
-        while ( a != b) {
+    public static int NWD(int a, int b) {
+        while (a != b) {
             if (a > b) {
                 a = a - b;
             } else {
@@ -18,13 +18,19 @@ final class Algorithms {
         }
         return a;
     }
-/*
-    public static OptionalLong sumOf(List<Integer>) {
+
+    public static OptionalLong sumOf(List<Integer> lista) {
 
         return OptionalLong.empty();
-    }*/
+    }
+
 
     public static int abs(int a){
-        return 0;
+        if (a >= 0) {
+            return a;
+        } else {
+            return a * (-1);
+        }
+
     }
 }

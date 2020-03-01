@@ -43,7 +43,7 @@ class AlgorithmsTest {
         assertEquals(1,Algorithms.NWD(13,3));
     }
     @Test
-    void testAbs(){
+    void testabs(){
         assertEquals(5,Algorithms.abs(5));
         assertEquals(6,Algorithms.abs(-6));
         assertEquals(0,Algorithms.abs(0));
