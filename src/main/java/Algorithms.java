@@ -1,7 +1,10 @@
 import java.util.List;
 import java.util.OptionalLong;
+import java.util.stream.Collectors;
 
 final class Algorithms {
+
+
     public static boolean isPalindrom(String string) {
 
         return true;
@@ -40,6 +43,13 @@ final class Algorithms {
 
     public static long sil (long a) {
         return 0;
+    }
+
+    static long countIn(List<Integer> lista, int v) {
+        return lista.stream()
+                .filter(e -> e.equals(v))
+                .count();
+
     }
 }
 
