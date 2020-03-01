@@ -1,9 +1,26 @@
-/**
- * ...comment class...
- *
- * @author
- * @since 01.03.2020
- */
-final class Algorithms {
+import java.util.List;
+import java.util.Optional;
+import java.util.OptionalLong;
 
+final class Algorithms {
+    public static boolean isPalindrom(String string) {
+
+        return true;
+    }
+
+    public static int nwd (int a, int b) {
+        while ( a != b) {
+            if (a > b) {
+                a = a - b;
+            } else {
+                b = b - a;
+            }
+        }
+        return a;
+    }
+/*
+    public static OptionalLong sumOf(List<Integer>) {
+
+        return OptionalLong.empty();
+    }*/
 }
