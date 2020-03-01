@@ -8,7 +8,7 @@ final class Algorithms {
         return true;
     }
 
-    public static int nwd (int a, int b) {
+    public static int NWD (int a, int b) {
         while ( a != b) {
             if (a > b) {
                 a = a - b;
@@ -23,4 +23,8 @@ final class Algorithms {
 
         return OptionalLong.empty();
     }*/
+    }
+    public static int abs(int a){
+        return 0;
+    }
 }
