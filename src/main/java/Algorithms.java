@@ -1,5 +1,4 @@
 import java.util.List;
-import java.util.Optional;
 import java.util.OptionalLong;
 
 final class Algorithms {
@@ -33,4 +32,14 @@ final class Algorithms {
         }
 
     }
+
+    public static long pow (long a, long b) {
+        return 0;
+    }
+
+
+    public static long sil (long a) {
+        return 0;
+    }
 }
+
