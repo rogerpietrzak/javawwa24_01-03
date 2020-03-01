@@ -3,13 +3,38 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/**
- * ...comment class...
- *
- * @author
- * @since 01.03.2020
- */
 class AlgorithmsTest {
+
+    @Test
+    void shouldReturnTrueIfWordIsPalindromUpperCase(){
+        //given
+        String w = "kajak";
+        //when
+        boolean palindrom = Algorithms.isPalindrom(w);
+        //then
+        Assertions.assertEquals(true, palindrom);
+    }
+
+    @Test
+    void shouldReturnTrueIfWordIsPalindrom(){
+        //given
+        String w = "Kajak";
+        //when
+        boolean palindrom = Algorithms.isPalindrom(w);
+        //then
+        Assertions.assertEquals(true, palindrom);
+    }
+
+    @Test
+    void shouldReturnFalseIfWordIsNotPalindrom() {
+        //given
+        String w = "xyz";
+        //when
+        boolean palindrom = Algorithms.isPalindrom(w);
+        //then
+        Assertions.assertEquals(false, palindrom);
+    }
+
     @Test
     void testNWD(){
         assertEquals(5,Algorithms.NWD(5,5));
